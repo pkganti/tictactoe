@@ -1,41 +1,58 @@
-@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Candal);
 
 body {
-background-image: url("http://photosinbox.com/wp-content/uploads/2012/02/tic-tac-toe.jpg");
+background-image: url("https://wallpaperscraft.com/image/dark_spot_background_texture_50611_602x339.jpg");
 opacity: 0.9;
 background-size: cover;
 }
 
 h1 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Candal', sans-serif;
   text-align: center;
-  color: grey;
-  text-shadow: 1px 1px black;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 .playerimages {
   position: absolute;
-  visibility: visible;
-  left: 20px;
-  top: 300px;
+  right: 0;
+  display: inline-flex;
+}
+
+.image {
+  padding: 3px;
+  border-radius: 1em;
+  border: 1px solid white;
+}
+
+label {
+  color: white;
+  padding: 5px;
+}
+
+.twolabels {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.player {
+  padding: 5px;
+  width: 75px;
+  height: 10px;
+}
+
+
+.score1, .score2 {
+  width: 100px;
   height: 100px;
-  width: 150px;
-  z-index: 200;
+  display: inline-block;
 }
-img {
-  border: 5px;
-  border-color: black;
-}
-
-/*.playerimages{
-  float: right;
-}*/
-
 
 .gameboard {
   width: 380px;
   height:380px;
-  border:3px solid yellow;
+  margin: 0 auto;
+  /*border:3px solid yellow;*/
   padding: 5px;
   position: relative;
   /*z-index: 1;*/
@@ -44,11 +61,11 @@ img {
 
 .wrapper {
   text-align: center;
-  width: 380px;
+  width: 1200px;
   /*margin-left: auto;
   margin-right: auto;*/
   margin: 0 auto;
-  padding: 5px 5px 5px 5px;
+  /*padding: 5px 5px 5px 5px;*/
 }
 
 .row1, .row2, .row3 {
@@ -69,21 +86,26 @@ clear: both;
   float: left;
   margin:8px;
   padding:5px;
-  color: black;
-  background-color: grey;
-  opacity: 0.4;
+  /*color: red;*/
+  background-color: black;
+  opacity: 0.7;
 }
 
 
 
 .gameover {
   background-image: url();
-  background-color: green;
+  /*background-color: green;*/
   visibility: collapse;
 }
 
 .gamedrawn {
   background-color: bisque;
+
+}
+
+.selected {
+  visibility: collapse;
 
 }
 
@@ -95,7 +117,38 @@ clear: both;
   padding: 5px;
 }
 
-.score1, .score2 {
-  width: 100px;
-  height: 50px;
+#1{
+  background-image: url();
+}
+
+#2{
+  background-image: url();
+}
+
+#3{
+  background-image: url();
+}
+
+#4{
+  background-image: url();
+}
+
+#5{
+  background-image: url();
+}
+
+#6{
+  background-image: url();
+}
+
+#7{
+  background-image: url();
+}
+
+#8{
+  background-image: url();
+}
+
+#9{
+  background-image: url();
 }

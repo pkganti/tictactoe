@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Tic Tac Toe</title>
   <script src="js/jquery.js" charset="utf-8"></script>
   <script src="js/tictactoe.js" charset="utf-8"></script>
   <script src="js/tictactoe2.js" charset="utf-8"></script>
@@ -14,28 +14,51 @@
 
   <h1>Tic Tac & Toe</h1>
 
+  <div class='wrapper'>
   <div class="twolabels">
     <div class="score1">
-      <label for="score1"><h4>Player1 Score</h4></label>
-      <input type="text" class='player1' placeholder="player1">
+      <label for="score1"><h4>Player 1</h4></label>
+      <img src="" alt="" id='playerOneImage' height:"50" width="50">
+      <input type="text" class='player' id='player1' placeholder="Player 1">
+
     </div>
     <div class="score2">
-      <label for="score2"><h4>Player2 Score</h4></label>
-      <input type="text" class='player2' placeholder="player2">
+      <label for="score2"><h4>Player 2</h4></label>
+      <img src="" alt="" id='playerTwoImage' height:"50" width="50">
+      <input type="text" class='player' id='player2' placeholder="Player 2">
     </div>
   </div>
+
 
   <div class="playerimages">
     <div id="image1">
-      <img src="http://www.sherv.net/cm/emoticons/basketball/basketball-spin-smiley-emoticon.gif" height="50" width="50">
+      <input class="image" type="image" src="http://sarg.lt/uploads/profile/photo-17512.gif" height="50" width="50">
+      <!-- <img src="http://sarg.lt/uploads/profile/photo-17512.gif" height="50" width="50"> -->
     </div>
     <div id="image2">
-      <img src="http://www.picgifs.com/smileys/smileys-and-emoticons/basketball/smileys-basketball-624299.gif" height="50" width="50">
+      <input class="image" type="image" src="https://0.s3.envato.com/files/78825.gif" height="50" width="50">
+      <!-- <img src="https://0.s3.envato.com/files/78825.gif" height="50" width="50"> -->
+    </div>
+    <div id="image3">
+    <input class= "image" type="image" src="http://www.avatarsdb.com/avatars/pc_user.gif" height="50" width="50">
+    <!-- <img src="http://www.avatarsdb.com/avatars/pc_user.gif" height="50" width="50"> -->
+    </div>
+    <div id="image4">
+    <input class="image" type="image" src="http://i1082.photobucket.com/albums/j380/faris65/berubah.gif" height="50" width="50">
+    <!-- <img src="http://i1082.photobucket.com/albums/j380/faris65/berubah.gif" height="50" width="50"> -->
+    </div>
+    <div id="image5">
+    <input class="image" type="image" src="http://www.animated-gifs.eu/category_animals/avatars-100x100-cats/0077.gif" height="50" width="50">
+    <!-- <img src="http://www.animated-gifs.eu/category_animals/avatars-100x100-cats/0077.gif" height="50" width="50"> -->
+    </div>
+    <div id="image6">
+    <input class="image" type="image" src="http://avatarbox.net/avatars/img15/funny_white_bear_dance_avatar_picture_86684.gif" height="50" width="50">
+    <!-- <img src="http://avatarbox.net/avatars/img15/funny_white_bear_dance_avatar_picture_86684.gif" height="50" width="50"> -->
     </div>
   </div>
 
-<div class='wrapper' id='boxgrid'>
-  <div class='gameboard'>
+
+  <div class='gameboard' id='boxgrid'>
     <div class='row1'>
       <div class="box 1" id='0'></div>
       <div class="box 2" id='1'></div>
