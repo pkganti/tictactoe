@@ -1,12 +1,11 @@
+var playerArr = ['-','-','-','-','-','-','-','-','-'];//This is the board position array
+var count=0;//Initial count set to 0
 //This is the object which has array of elements of winning combinations
-
-var playerArr = ['-','-','-','-','-','-','-','-','-'];
-var count=0;
 var threeObject = {
     winPos: [[0,1,2], [0, 3, 6], [0, 4, 8], [3, 4, 5], [6, 7, 8], [1, 4, 7], [2, 5, 8], [2, 4, 6]]
   };
 
-//This function takes an argument of player and returns which player
+//This function takes an argument of player and returns which player is winner
 var getWinner = function(player){
   if(player!==null){
   var winner = null;
@@ -18,7 +17,6 @@ var getWinner = function(player){
       }
     }
     if (matchingMoves === 3) {
-        // console.log("Player " + player + " wins");
         winner = player;
         break main;
     }
